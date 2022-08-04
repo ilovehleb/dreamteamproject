@@ -4,6 +4,11 @@ while True:
         "Ввод 'Q' останавливает программу."
           "\n")
     a = input('Введите первое число:  ')
+    if not a.isdigit():
+        print("\n"
+              'Не является числом!'
+              "\n")
+        continue
     if a=="q" or a=="Q":
         break
     x = input('Знак действия:  ')
@@ -15,6 +20,11 @@ while True:
     if x=="q" or x=="Q":
         break
     b = input('Введите второе число:  ')
+    if not b.isdigit():
+        print("\n"
+              'Не является числом!'
+              "\n")
+        continue
     if b=="q" or b=="Q":
         break
     if a=="q" or a=="Q" or x=="q" or x=="Q" or b=="q" or b=="Q":
@@ -34,3 +44,5 @@ while True:
         else:
             print("\n"
                   "Ответ:  ",int(a)/int(b))
+
+
