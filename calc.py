@@ -38,39 +38,29 @@ while True:
 
 
     if x=="+":
-        print("\n"
-              "Ответ:  ",int(a)+int(b)
-              "\n____________________")
+        print("Ответ:  ", str(int(a)+int(b)))
 
 
     elif x=="-":
-        print("\n"
-              "Ответ:  ",int(a)-int(b)
-              "\n____________________")
+        print("Ответ:  ", str(int(a)-int(b)))
 
 
     elif x=="*":
-        print("\n"
-              "Ответ:  ",int(a)*int(b)
-              "\n____________________")
+        print("Ответ:  ", str(int(a)*int(b)))
 
 
     elif x=='**':
-        print("\n"
-              "Ответ:  ",int(a)**int(b)
-              "\n____________________")
+        print("Ответ:  ", str(int(a)**int(b)))
 
 
     elif x=='sqrt':
-        print("\n"
-              "Ответ:  ",int(b)**(1/int(a))
-              "\n____________________")
+        print("Ответ:  ", int(b)**(1/int(a)))
+
+
     else:
         if b=='0':
             print("Делить на ноль нельзя!")
         else:
-            print("\n"
-                  "Ответ:  ",int(a)/int(b)
-                  "\n____________________")
+            print("Ответ:  ", int(a)/int(b))
 
 
